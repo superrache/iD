@@ -1,3 +1,4 @@
+export { modeDetectArea } from './detect_area';
 export { modeAddArea } from './add_area';
 export { modeAddLine } from './add_line';
 export { modeAddPoint } from './add_point';

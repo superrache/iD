@@ -3,6 +3,7 @@ import _debounce from 'lodash-es/debounce';
 import { select as d3_select } from 'd3-selection';
 
 import {
+    modeDetectArea,
     modeAddArea,
     modeAddLine,
     modeAddPoint,
@@ -42,6 +43,13 @@ export function uiToolOldDrawModes(context) {
             description: t.html('modes.add_area.description'),
             preset: presetManager.item('area'),
             key: '3'
+        }),
+        modeDetectArea(context, {
+            title: t.html('modes.detect_area.title'),
+            button: 'detect_area',
+            description: t.html('modes.detect_area.description'),
+            preset: presetManager.item('detect_area'),
+            key: '4'
         })
     ];
 
